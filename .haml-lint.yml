@@ -1,0 +1,16 @@
+---
+exclude:
+  - ".bundle/**/*"
+  - "bin/bundle"
+  - "node_modules/**/*"
+  - "public/**/*"
+  - "tmp/**/*"
+  - "vendor/bundle/**/*"
+
+linters:
+  LineLength:
+    max: 120
+
+  SpaceInsideHashAttributes:
+    enabled: true
+    style: no_space

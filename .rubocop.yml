@@ -1,0 +1,25 @@
+---
+inherit_from:
+  - <%= ENV["RUBOCOP_ENFORCE"] ? "" : ".rubocop_todo.yml" %>
+inherit_gem:
+  rubocop-rails: config/default.yml
+  rubocop-rake: config/default.yml
+  rubocop-rspec: config/default.yml
+  standard: config/base.yml
+inherit_mode:
+  merge:
+    - Exclude
+require:
+  - rubocop-i18n
+  - rubocop-performance
+  - rubocop-rails
+  - rubocop-rake
+  - rubocop-rspec
+  - standard/cop/block_single_line_braces
+AllCops:
+  NewCops: enable
+  TargetRubyVersion: <%= File.read(".ruby-version").strip %>
+I18n/GetText:
+  Enabled: false
+I18n/RailsI18n:
+  Enabled: true
