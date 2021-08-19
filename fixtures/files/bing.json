@@ -1,0 +1,233 @@
+{
+  "_type": "SearchResponse",
+  "queryContext": {
+    "_type": "QueryContext",
+    "originalQuery": "elon+musk"
+  },
+  "webPages": {
+    "_type": "Web/WebAnswer",
+    "webSearchUrl": "https://www.bing.com/search?q=elon%2bmusk",
+    "totalEstimatedMatches": 98,
+    "value": [
+      {
+        "_type": "WebPage",
+        "id": "https://api.cognitive.microsoft.com/api/v7/#WebPages.0",
+        "name": "Tesla AI Day Likely to Star Elon Musk's 'Neural Net,' Self ...",
+        "url": "https://www.businessinsider.com/tesla-ai-day-self-driving-autopilot-neural-net-elon-musk-2021-8",
+        "isFamilyFriendly": true,
+        "displayUrl": "https://www.businessinsider.com/tesla-ai-day-self-driving-autopilot-neural-net-elon...",
+        "snippet": "Tesla's AI day, set for Thursday evening at the automaker's Silicon Valley headquarters, could help set the record straight when it comes to Elon Musk's grand plans for self-driving. Tesla's so ...",
+        "dateLastCrawled": "2021-08-19T10:01:00.0000000Z",
+        "language": "en",
+        "isNavigational": false
+      },
+      {
+        "_type": "WebPage",
+        "id": "https://api.cognitive.microsoft.com/api/v7/#WebPages.1",
+        "name": "Elon Musk's 'AI Day' today confronts tough questions about ...",
+        "url": "https://www.autoblog.com/2021/08/19/elon-musks-ai-day-today-confronts-tough-questions-about-tesla-technology/",
+        "isFamilyFriendly": true,
+        "displayUrl": "https://www.autoblog.com/2021/08/19/elon-musks-ai-day-today-confronts-tough-questions...",
+        "snippet": "SAN FRANCISCO — At Tesla's \"Autonomy Day\" event in April 2019, Chief Executive Elon Musk said that by mid-2020 Tesla would have over a million self-driving vehicles where riders \"could go to ...",
+        "dateLastCrawled": "2021-08-19T11:31:00.0000000Z",
+        "language": "en",
+        "isNavigational": false
+      },
+      {
+        "_type": "WebPage",
+        "id": "https://api.cognitive.microsoft.com/api/v7/#WebPages.2",
+        "name": "Elon Musk y la firma mexicana StarGroup en pie de guerra ...",
+        "url": "https://www.forbesargentina.com/millonarios/elon-musk-firma-mexicana-stargroup-pie-guerra-marca-starlink-n7483",
+        "isFamilyFriendly": true,
+        "displayUrl": "https://www.forbesargentina.com/millonarios/elon-musk-firma-mexicana-stargroup-pie...",
+        "snippet": "Elon Musk. El IMPI negó la solicitud de SpaceX, ya que determinó que el registro de StarLink por parte de StarGroup fue claro en cuanto al alcance de sus servicios y que sí había hecho uso de la marca, aseguró la empresa mexicana.",
+        "dateLastCrawled": "2021-08-19T11:44:00.0000000Z",
+        "language": "es",
+        "isNavigational": false
+      },
+      {
+        "_type": "WebPage",
+        "id": "https://api.cognitive.microsoft.com/api/v7/#WebPages.3",
+        "name": "Así es la casa de 37 metros cuadrados de Elon Musk",
+        "url": "https://www.tuotrodiario.com/tecnologia/20210819209362/casa-elon-musk-37-metros-cuadrados",
+        "isFamilyFriendly": true,
+        "displayUrl": "https://www.tuotrodiario.com/tecnologia/20210819209362/casa-elon-musk-37-metros-cuadrados",
+        "snippet": "De momento, los encargados de diseñar el nuevo hogar de Elon Musk, bautizado como la ‘Casita’ tan solo han dado forma a 3 viviendas más. Sin embargo, tras mudarse a una fábrica de casi 16,000 metros cuadrados esperan poder fabricar una Casita cada 90 minutos, o alrededor de 3,600 unidades al año, para fines de 2022.",
+        "dateLastCrawled": "2021-08-19T10:34:00.0000000Z",
+        "language": "es",
+        "isNavigational": false
+      },
+      {
+        "_type": "WebPage",
+        "id": "https://api.cognitive.microsoft.com/api/v7/#WebPages.4",
+        "name": "Elon Musk just confessed to cancelling Apple News. Here's ...",
+        "url": "https://theelontimes.com/elon-musk-just-confessed-to-cancelling-apple-news-heres-why/",
+        "isFamilyFriendly": true,
+        "displayUrl": "https://theelontimes.com/elon-musk-just-confessed-to-cancelling-apple-news-heres-why",
+        "snippet": "News Shared by Google News Credit: Source link It wasn’t an ideal Thursday for Apple News when Tesla CEO Elon Musk confessed that he had discontinued following Apple News. Apple News is the Cupertino-based company’s news aggregator platform that helps optimise content for iOS, macOS, iPadOS and watchOS users. Articles from various known news publications […]",
+        "dateLastCrawled": "2021-08-19T06:07:00.0000000Z",
+        "language": "en",
+        "isNavigational": false
+      },
+      {
+        "_type": "WebPage",
+        "id": "https://api.cognitive.microsoft.com/api/v7/#WebPages.5",
+        "name": "We explain how Elon Musk thinks he puts chips in people's ...",
+        "url": "https://debatepost.com/famous-people/2021/08/19/we-explain-how-elon-musk-thinks-he-puts-chips-in-peoples-brains/",
+        "isFamilyFriendly": true,
+        "displayUrl": "https://debatepost.com/famous-people/2021/08/19/we-explain-how-elon-musk-thinks-he...",
+        "snippet": "Elon Musk, CEO of Tesla and Space X, is also leading a wacky and exciting project: the development of a neural technology company called Neuralink. He co-founded Neuralink in 2016, and the company remained relatively secret until 2017 when the Wall Street Journal announced he created it to “merge the computer with the human brain.”",
+        "dateLastCrawled": "2021-08-19T12:38:00.0000000Z",
+        "language": "en",
+        "isNavigational": false
+      },
+      {
+        "_type": "WebPage",
+        "id": "https://api.cognitive.microsoft.com/api/v7/#WebPages.6",
+        "name": "Elon Musk's girlfriend Grimes shared a TikTok video of ...",
+        "url": "https://www.businessinsider.in/tech/news/elon-musks-girlfriend-grimes-shared-a-tiktok-video-of-their-son-x-ae-a-xii-and-the-familys-vacation-in-italy/articleshow/85436111.cms",
+        "isFamilyFriendly": true,
+        "displayUrl": "https://www.businessinsider.in/tech/news/elon-musks-girlfriend-grimes-shared-a-tiktok...",
+        "snippet": "Though Musk posted a picture of himself with his baby earlier this year and the family was seen at SpaceX's launch site, Starbase, Texas. -Elon Musk (@elonmusk) March 8, 2021",
+        "dateLastCrawled": "2021-08-18T17:33:00.0000000Z",
+        "language": "en",
+        "isNavigational": false
+      },
+      {
+        "_type": "WebPage",
+        "id": "https://api.cognitive.microsoft.com/api/v7/#WebPages.7",
+        "name": "Elon Musk cancels Apple News; here’s why – Mint – ELON IS UP",
+        "url": "https://www.elonisup.com/2021/08/19/elon-musk-cancels-apple-news-heres-why-mint/",
+        "isFamilyFriendly": true,
+        "displayUrl": "https://www.elonisup.com/2021/08/19/elon-musk-cancels-apple-news-heres-why-mint",
+        "snippet": "Elon Musk just confessed to cancelling Apple News. Here’s why – The Economic Times Dogecoin Welcomes Elon Musk’s Adviser, Ethereum Founder to the Board—After 6 Year Haitus Elon Musk just confessed to cancelling Apple News. Here’s why – The Economic Times Dogecoin Foundation re-established with Vitalik and Elon Musk Family Office ...",
+        "dateLastCrawled": "2021-08-19T10:09:00.0000000Z",
+        "language": "en",
+        "isNavigational": false
+      },
+      {
+        "_type": "WebPage",
+        "id": "https://api.cognitive.microsoft.com/api/v7/#WebPages.8",
+        "name": "The Smartphone Market Will Turn Upside Down: Tesla Model ...",
+        "url": "https://www.devdiscourse.com/article/technology/1698579-the-smartphone-market-will-turn-upside-down-tesla-model-pi-by-elon-musk-is-coming",
+        "isFamilyFriendly": true,
+        "displayUrl": "https://www.devdiscourse.com/article/technology/1698579-the-smartphone-market-will...",
+        "snippet": "Elon Musk plans to launch the network globally in 2021. However, experts have discovered a problem in the Starlink satellite Internet system: hackers can easily intercept Starlink traffic. Elon Musk stated that the company had developed its proprietary protocol for encrypting user data and will use end-to-end encryption.",
+        "dateLastCrawled": "2021-08-19T07:15:00.0000000Z",
+        "language": "en",
+        "isNavigational": false
+      },
+      {
+        "_type": "WebPage",
+        "id": "https://api.cognitive.microsoft.com/api/v7/#WebPages.9",
+        "name": "Elon Musk’s JAW DROPPING Speech Will Terrify You – Speech Asia",
+        "url": "https://speechasia.com/boring-speech/elon-musks-jaw-dropping-speech-will-terrify-you/",
+        "isFamilyFriendly": true,
+        "displayUrl": "https://speechasia.com/boring-speech/elon-musks-jaw-dropping-speech-will-terrify-you",
+        "snippet": "Elon Musk is a business magnate, engineer, inventor, and designer. Elon Musk is the founder of Tesla, SpaceX, and The Boring Company. Elon Musk is also the co-founder of Neuralink and OpenAI. Musk is considered by many to be the greatest entrepreneur of our generation due to his relentless efforts to have a better future for humanity.",
+        "dateLastCrawled": "2021-08-19T00:45:00.0000000Z",
+        "language": "en",
+        "isNavigational": false
+      }
+    ],
+    "someResultsRemoved": true
+  },
+  "rankingResponse": {
+    "_type": "Ranking/RankingResponse",
+    "mainline": {
+      "_type": "Ranking/RankingGroup",
+      "items": [
+        {
+          "_type": "Ranking/RankingItem",
+          "answerType": "WebPages",
+          "resultIndex": 0,
+          "value": {
+            "_type": "Identifiable",
+            "id": "https://api.cognitive.microsoft.com/api/v7/#WebPages.0"
+          }
+        },
+        {
+          "_type": "Ranking/RankingItem",
+          "answerType": "WebPages",
+          "resultIndex": 1,
+          "value": {
+            "_type": "Identifiable",
+            "id": "https://api.cognitive.microsoft.com/api/v7/#WebPages.1"
+          }
+        },
+        {
+          "_type": "Ranking/RankingItem",
+          "answerType": "WebPages",
+          "resultIndex": 2,
+          "value": {
+            "_type": "Identifiable",
+            "id": "https://api.cognitive.microsoft.com/api/v7/#WebPages.2"
+          }
+        },
+        {
+          "_type": "Ranking/RankingItem",
+          "answerType": "WebPages",
+          "resultIndex": 3,
+          "value": {
+            "_type": "Identifiable",
+            "id": "https://api.cognitive.microsoft.com/api/v7/#WebPages.3"
+          }
+        },
+        {
+          "_type": "Ranking/RankingItem",
+          "answerType": "WebPages",
+          "resultIndex": 4,
+          "value": {
+            "_type": "Identifiable",
+            "id": "https://api.cognitive.microsoft.com/api/v7/#WebPages.4"
+          }
+        },
+        {
+          "_type": "Ranking/RankingItem",
+          "answerType": "WebPages",
+          "resultIndex": 5,
+          "value": {
+            "_type": "Identifiable",
+            "id": "https://api.cognitive.microsoft.com/api/v7/#WebPages.5"
+          }
+        },
+        {
+          "_type": "Ranking/RankingItem",
+          "answerType": "WebPages",
+          "resultIndex": 6,
+          "value": {
+            "_type": "Identifiable",
+            "id": "https://api.cognitive.microsoft.com/api/v7/#WebPages.6"
+          }
+        },
+        {
+          "_type": "Ranking/RankingItem",
+          "answerType": "WebPages",
+          "resultIndex": 7,
+          "value": {
+            "_type": "Identifiable",
+            "id": "https://api.cognitive.microsoft.com/api/v7/#WebPages.7"
+          }
+        },
+        {
+          "_type": "Ranking/RankingItem",
+          "answerType": "WebPages",
+          "resultIndex": 8,
+          "value": {
+            "_type": "Identifiable",
+            "id": "https://api.cognitive.microsoft.com/api/v7/#WebPages.8"
+          }
+        },
+        {
+          "_type": "Ranking/RankingItem",
+          "answerType": "WebPages",
+          "resultIndex": 9,
+          "value": {
+            "_type": "Identifiable",
+            "id": "https://api.cognitive.microsoft.com/api/v7/#WebPages.9"
+          }
+        }
+      ]
+    }
+  }
+}
