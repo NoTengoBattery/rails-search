@@ -3,9 +3,9 @@ class SearchesController < ApplicationController
     @search = Search.new(search_params)
 
     if @search.valid?
-      render json: @search
+      render json: @search, status: :ok
     else
-      render json: {error: :invalid}, status: :unprocessable_entity
+      render json: {errors: @search.errors}, status: :unprocessable_entity
     end
   end
 

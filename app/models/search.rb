@@ -4,9 +4,15 @@ class Search
   ENGINES = ["bing", "both", "google"]
 
   include ActiveModel::Model
+  include ActiveModel::Serializers::JSON
 
   attr_accessor :engine, :search
 
   validates :engine, :search, presence: true
   validates :engine, inclusion: {in: Search::ENGINES}
+
+  def attributes
+    {"engine" => nil,
+     "search" => nil}
+  end
 end
