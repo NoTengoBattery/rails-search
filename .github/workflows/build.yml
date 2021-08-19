@@ -152,7 +152,7 @@ jobs:
     env:
       NODE_ENV: production
       RAILS_ENV: production
-      #RAILS_MASTER_KEY: ${{ secrets.RAILS_MASTER_KEY }}
+      RAILS_MASTER_KEY: ${{ secrets.RAILS_MASTER_KEY }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
@@ -176,8 +176,6 @@ jobs:
         with:
           path: ${{ steps.yarn-cache-path.outputs.dir }}
           key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
-      - name: "[REMOVE THIS STEP ON YOUR REPO]"
-        run: EDITOR=true bundle exec rails credentials:edit
       - name: Compile the Webpacker assets
         env:
           FORCE_COLOR: 1
@@ -196,7 +194,7 @@ jobs:
       POSTGRES_PASSWORD: postgres
       POSTGRES_USER: postgres
       RAILS_ENV: test
-      #RAILS_MASTER_KEY: ${{ secrets.RAILS_MASTER_KEY }}
+      RAILS_MASTER_KEY: ${{ secrets.RAILS_MASTER_KEY }}
     strategy:
       matrix:
         browser: [chrome, firefox]
@@ -241,14 +239,6 @@ jobs:
         env:
           FORCE_COLOR: 1
         run: bin/rails db:setup
-
-      # Currently, Capybara supports Chrome and Firefox
-      - name: Use Firefox browser for the test suite
-        if: matrix.browser == 'firefox'
-        uses: browser-actions/setup-firefox@latest
-      - name: Use Chrome browser for the test suite
-        if: matrix.browser == 'chrome'
-        uses: browser-actions/setup-chrome@latest
 
       - name: RSpec test suite report for ${{ matrix.browser }}
         env:

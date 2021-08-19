@@ -19,7 +19,7 @@ require "action_cable/engine"
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
-module WebsiteTemplate
+module RailsSearch
   class Application < Rails::Application
     require_relative "app_config"
 
