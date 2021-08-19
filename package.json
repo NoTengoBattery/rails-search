@@ -1,6 +1,6 @@
 {
-  "name": "website-template",
-  "version": "0.0.1",
+  "name": "rails-search",
+  "version": "1.0.0",
   "private": true,
   "engines": {
     "node": "16.x"
