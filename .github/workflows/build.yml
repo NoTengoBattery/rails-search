@@ -248,7 +248,7 @@ jobs:
         uses: browser-actions/setup-firefox@latest
       - name: Use Chrome browser for the test suite
         if: matrix.browser == 'chrome'
-        uses: browser-actions/setup-chrome@latest
+        uses: browser-actions/setup-chrome@stable
 
       - name: RSpec test suite report for ${{ matrix.browser }}
         env:
