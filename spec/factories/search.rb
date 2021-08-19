@@ -1,6 +1,6 @@
 FactoryBot.define do
   factory :search do
-    engine { :google }
+    engine { Search::ENGINES.sample }
     search { Faker::Food.dish }
   end
 end
