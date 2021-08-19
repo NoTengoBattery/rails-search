@@ -1,7 +1,9 @@
 class Result
-  include ActiveModel::Callbacks
   include ActiveModel::Model
   include ActiveModel::Serializers::JSON
+  include ActiveModel::Validations::Callbacks
+
+  after_validation :map_properties
 
   attr_accessor :headline, :mappings, :url, :extract
 
@@ -11,5 +13,10 @@ class Result
     {"extract" => nil,
      "headline" => nil,
      "url" => nil}
+  end
+
+  private
+
+  def map_properties
   end
 end

@@ -5,6 +5,9 @@ class Search
 
   include ActiveModel::Model
   include ActiveModel::Serializers::JSON
+  include ActiveModel::Validations::Callbacks
+
+  after_validation :perform_search
 
   attr_accessor :engine, :search, :results
 
@@ -15,5 +18,11 @@ class Search
     {"engine" => nil,
      "search" => nil,
      "results" => []}
+  end
+
+  private
+
+  def perform_search
+    @results = []
   end
 end
