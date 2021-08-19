@@ -7,6 +7,6 @@ RSpec.describe Search, type: :model do
 
     it { is_expected.to validate_presence_of(:engine) }
     it { is_expected.to validate_presence_of(:search) }
-    it { is_expected.to allow_values(:google, :bing, :both).for(:engine) }
+    it { is_expected.to allow_values(Search::ENGINES).for(:engine) }
   end
 end

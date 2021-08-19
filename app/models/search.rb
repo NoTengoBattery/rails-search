@@ -1,7 +1,7 @@
 # This is a recordless model (i.e. does not exist in a database)
 
 class Search
-  ENGINES = %i[bing both google]
+  ENGINES = ["bing", "both", "google"]
 
   include ActiveModel::Model
 

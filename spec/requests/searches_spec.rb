@@ -14,14 +14,12 @@ RSpec.describe "/search", type: :request do
 
   describe "GET /search" do
     it "renders a successful response with valid params" do
-      search = Search.new(valid_attr)
-      get search_url(search)
+      get search_url(valid_attr)
       expect(response).to be_successful
     end
 
     it "renders an unprocessable entity response with invalid params" do
-      search = Search.new(invalid_attributes)
-      get search_url(search)
+      get search_url(invalid_attributes)
       expect(response).to have_http_status(:unprocessable_entity)
     end
   end
