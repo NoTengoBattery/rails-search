@@ -6,13 +6,14 @@ class Search
   include ActiveModel::Model
   include ActiveModel::Serializers::JSON
 
-  attr_accessor :engine, :search
+  attr_accessor :engine, :search, :results
 
   validates :engine, :search, presence: true
   validates :engine, inclusion: {in: Search::ENGINES}
 
   def attributes
     {"engine" => nil,
-     "search" => nil}
+     "search" => nil,
+     "results" => []}
   end
 end
