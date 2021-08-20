@@ -1,44 +1,100 @@
-# Ruby on Rails template
+# Search endpoint
 
-This is a template designed to speed-up project lifting time. It's designed to use the best CI principles and to be automatically deployable to Heroku. With this template, developers can spend more time working on new projects than configuring every aspect of them.
+A simple demo application that uses RapidAPI to query Google and Bing and allows the user to get standarized information from each one of them or both. The application accepts a query in the `/search` endpoint with the following parameters:
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+- search: the query
+- engine: the search engine which can be `google`, `bing` or `both`
 
-## Perks
+## Features
+1. Validates the parameters
+1. Caches the queries improving performance and avoiding needless requests
+1. Fully stateless: it does not use the database at all
+1. Record-less models: all information is structured in ActiveModel::Model classes
+1. Implemented using the Service pattern
+1. Bilingual (see the demo section)
+1. Random but deterministic mixed results when using `both` engines
 
-  - A very thorough CI pipeline (workflow) that runs linters and automated tests. With good code coverage, it guarantees that no undeployable code will pass the CI tests. Perfect fit for automatic deployment.
-  - Linters configured to use the latest standards.
-  - JavaScript via Webpacker exclusively. TypeScript is supported and encouraged.
-  - Ready to deploy, it's designed as Heroku application but works in bare-servers as well.
-  - Configured dependabot to keep the project always up-to-date.
-  - A GitHub template, that means: no need to clone this project, just use it by clicking the green button!
-  - PostgreSQL database.
-  - Implemented and installed Active Storage with the very efficient libvips processor.
-  - Ready for localization and internationalization.
-  - Uses Stimulus and Turbo for front-end. Cutting edge technology.
-  - Designed to stop developers from sticking to ancient and vulnerable old dependencies.
-  - Supports automatically running tests in Chrome and Firefox in the CI pipeline.
-  - Tailwind, Dart SASS and Iconify installed and ready to use.
+## Installing and running locally
 
-> This template won't use Sprockets (assets pipeline). Webpack or Active Storage should be used instead.
+### System dependencies
 
-## Dependencies
+A Linux machine is preferred. Install the following dependencies (the process varies depending on your local setup):
+| Dependency                | Version                |
+| ------------------------- | ---------------------- |
+| GIT VCS                   | **any modern version** |
+| Ruby                      | 3.0.2+                 |
+| Node.js                   | 16.4+                  |
+| PostgreSQL                | 12+                    |
+| Redis                     | 6+                     |
+| Foreman                   | 0.87+                  |
+| Google Chrome or Chromium | **any modern version** |
+| Firefox                   | **any modern version** |
 
-- Latest version of Ruby
-- Latest version of Node.js
-- Latest version of libvips
+### Instructions
 
-## Credentails
+1. Clone this repository locally, for example `git clone https://github.com/NoTengoBattery/rails-search`
+1. Change to the project's root directory, for example `cd rails-search`
+1. Install the Ruby dependencies with `bundle install`
+1. Install the Node.js dependencies with `yarn install`
+1. Roll a new set of credentials with `rm config/credentials.yml.enc; bundle exec rails credentials:edit`
+   - May need to set-up a proper text editor for this command to work. Try `export EDITOR=nano`
+   - To deploy to staging and review applications, add HTTP login details in this file. Not needed locally.
+   - Need to subscribe to the following APIs and add the RapidAPI key: [Google](https://rapidapi.com/apigeek/api/google-search3/) [Bing](https://rapidapi.com/microsoft-azure-org-microsoft-cognitive-services/api/bing-web-search1/)
+1. Prepare the database with `bundle exec rails db:prepare`
+   - May need to setup the PostgreSQL roles beforehand
+1. Run the server using `foreman start` and browse to it's URL
+1. Execute the test suite using `bundle exec rspec`
+   - The feature test may fail if Chrome is not installed. Run this command if you have Firefox: `USING_BROWSER=firefox bundle exec rspec`
+   - The feature test may fail in headless configs. Run this command if you have headless config: `CI=true bundle exec rspec`
 
-This application uses the Rails credentials store to save most of it's secrets. This template has no credentials store, so, you need to generate one. In that one, you will define the HTTP credentials to access your review and staging apps.
+> Note: the `credentials.yml` should have the following structure:
+```yml
+secret_key_base: -
 
-1. Run `bundle exec rails credentials:edit`
-2. In that file, add the following lines:
-  ```
-  http_basic:
-    username: <put a username here>
-    password: <put a safe password here>
-  ```
-3. Save your master key in a safe place
-4. Add the master key as a GitHub Secret `RAILS_MASTER_KEY` as well as for dependabot and edit the workflow file as instructed in there
-5. Add that same master key to all Heroku environments and delete the `SECRET_KEY_BASE` variable
+http_basic:
+  username: -
+  password: -
+
+rapidapi:
+  key: -
+```
+## Live demo
+
+As always, you can find a live demo in [Heroku](https://infinite-meadow-42034.herokuapp.com/)
+> Using free dynos, so, don't expect excellent performance
+>
+> **Username**: `demo`
+> **Password**: `demo`
+
+### Changing the language
+
+When requesting the demo link above and selecting a language, the errors will show in either language when visiting the `/search` endpoint with invalid arguments:
+
+https://infinite-meadow-42034.herokuapp.com/search
+
+### Query endpoint
+
+This is a demo endpoint:
+
+https://infinite-meadow-42034.herokuapp.com/search?engine=both&search=apple
+
+### The Google Search endpoint is slow
+
+It seems that the API service parses the Google homepage, making it really slow. This is not a performance problem with the application. You can make a valid request twice on different browsers/devices and it will use the cached version.
+
+## Authors
+
+👤 **Oever González**
+
+-   GitHub: [@NoTengoBattery](https://github.com/NoTengoBattery/)
+-   Twitter: [@NoTengoBattery](https://twitter.com/NoTengoBattery/)
+-   LinkedIn: [Oever González](https://linkedin.com/in/NoTengoBattery/)
+
+## Acknowledgments
+
+-   JetBrains for their amazing [JetBrains Mono](https://fonts.google.com/specimen/JetBrains+Mono#about) monospace font family
+-   NoTengoBattery for my amazing and time-saving [Rails Template](https://github.com/NoTengoBattery/rails6-webpacker/)
+
+## 📝 License
+
+Open-source under the MIT License. Oever González (c) 2021.
