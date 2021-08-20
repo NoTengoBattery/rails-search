@@ -117,6 +117,6 @@ Rails.application.configure do
     password: :password
   }
 
-  # Use Amazon Web Serivices for online storage (on production)
-  config.active_storage.service = :amazon
+  # Use the memory_store for the short-term cache
+  config.cache_store = :memory_store
 end
