@@ -3,20 +3,30 @@ class Result
   include ActiveModel::Serializers::JSON
   include ActiveModel::Validations::Callbacks
 
-  after_validation :map_properties
+  before_validation :map_properties unless Rails.env.test?
 
-  attr_accessor :headline, :mappings, :url, :extract
+  attr_accessor :extract, :headline, :mappings, :provider, :url
 
-  validates :extract, :headline, :mappings, :url, presence: true
+  validates :extract, :headline, :mappings, :provider, :url, presence: true
+
+  def initialize(schema = {})
+    @schema = schema
+  end
 
   def attributes
     {"extract" => nil,
      "headline" => nil,
+     "provider" => nil,
      "url" => nil}
   end
 
   private
 
   def map_properties
+    @mappings = @schema["map"]
+    @extract = @schema[@mappings[:extract]]
+    @headline = @schema[@mappings[:headline]]
+    @provider = @schema[:provider]
+    @url = @schema[@mappings[:url]]
   end
 end

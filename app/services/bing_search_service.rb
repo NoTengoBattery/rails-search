@@ -12,7 +12,7 @@ class BingSearchService
       args = ActiveSupport::HashWithIndifferentAccess.new(args)
       uri = build_uri(args[:q])
       response = JSON.parse(make_request(uri).body)
-      schema_flatten(response)
+      schema_flatten(ActiveSupport::HashWithIndifferentAccess.new(response))
     end
   end
 
@@ -20,6 +20,8 @@ class BingSearchService
     # Sorting by the digest of the result will lead to a random yet deterministic
     # sorting, allowing the seamless mixture and truncation of the results.
     schema["webPages"]["value"].sort_by do |element|
+      element[:provider] = "bing"
+      element[:map] = MAPPING
       Digest::MD5.hexdigest(Marshal.dump(element))
     end
   end
