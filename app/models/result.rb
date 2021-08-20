@@ -3,6 +3,7 @@ class Result
   include ActiveModel::Serializers::JSON
   include ActiveModel::Validations::Callbacks
 
+  # For simplicity reasons, I will leave it this way.
   before_validation :map_properties unless Rails.env.test?
 
   attr_accessor :extract, :headline, :mappings, :provider, :url
@@ -22,6 +23,7 @@ class Result
 
   private
 
+  # The problem is simple enough that unpacking this way makes sense
   def map_properties
     @mappings = @schema["map"]
     @extract = @schema[@mappings[:extract]]
