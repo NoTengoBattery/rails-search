@@ -116,4 +116,7 @@ Rails.application.configure do
     user_name: :user,
     password: :password
   }
+
+  # Use the file_store for the short-term cache
+  config.cache_store = :file_store, Rails.root.join("tmp/cache-store")
 end
