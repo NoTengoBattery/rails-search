@@ -116,7 +116,4 @@ Rails.application.configure do
     user_name: :user,
     password: :password
   }
-
-  # Use Amazon Web Serivices for online storage (on production)
-  config.active_storage.service = :amazon
 end
