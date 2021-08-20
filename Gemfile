@@ -41,11 +41,11 @@ gem "rack-mini-profiler", "~> 2.3", ">= 2.3.2", require: false
 group :development, :test do
   gem "annotate", "~> 3.1", ">= 3.1.1"
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem "byebug", platforms: %i[mri mingw x64_mingw], require: false
+  gem "byebug", platforms: %i[mri mingw x64_mingw]
   # Add this to both development and test to take advantage of the generators
-  gem "factory_bot_rails", "~> 6.2", require: false
-  gem "faker", "~> 2.18", require: false
-  gem "rspec-rails", "~> 5.0", ">= 5.0.2", require: false
+  gem "factory_bot_rails", "~> 6.2"
+  gem "faker", "~> 2.18"
+  gem "rspec-rails", "~> 5.0", ">= 5.0.2"
   # Helper to avoid N+1 and unused eager loads
   gem "bullet", "~> 6.1", ">= 6.1.4"
 end
