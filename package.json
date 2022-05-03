@@ -24,7 +24,7 @@
     "@rails/activestorage": "^6.1",
     "@rails/ujs": "^6.1",
     "@rails/webpacker": "6.0.0-rc.1",
-    "autoprefixer": "^10.3",
+    "autoprefixer": "^10.4",
     "css-loader": "^6.2",
     "cssnano": "^5.0",
     "mini-css-extract-plugin": "^2.2",
